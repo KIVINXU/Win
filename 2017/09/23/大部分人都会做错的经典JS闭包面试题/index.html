@@ -72,7 +72,7 @@
 <link href="/css/main.css?v=5.1.2" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="面试," />
 
 
 
@@ -88,16 +88,18 @@
 
 
 
-<meta name="description" content="随笔分享">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Weblog">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta name="description" content="先看题目代码： function fun(n,o) {   console.log(o)   return {     fun:function(m){       return fun(m,n);     }   }; } var a = fun(0);  a.fun(1);  a.fun(2);  a.fun(3);//undefined,?,?,? var b = fun(0).fun(1)">
+<meta name="keywords" content="面试">
+<meta property="og:type" content="article">
+<meta property="og:title" content="大部分人都会做错的经典JS闭包面试题">
+<meta property="og:url" content="http://yoursite.com/2017/09/23/大部分人都会做错的经典JS闭包面试题/index.html">
 <meta property="og:site_name" content="Weblog">
-<meta property="og:description" content="随笔分享">
+<meta property="og:description" content="先看题目代码： function fun(n,o) {   console.log(o)   return {     fun:function(m){       return fun(m,n);     }   }; } var a = fun(0);  a.fun(1);  a.fun(2);  a.fun(3);//undefined,?,?,? var b = fun(0).fun(1)">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2017-09-24T12:49:01.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Weblog">
-<meta name="twitter:description" content="随笔分享">
+<meta name="twitter:title" content="大部分人都会做错的经典JS闭包面试题">
+<meta name="twitter:description" content="先看题目代码： function fun(n,o) {   console.log(o)   return {     fun:function(m){       return fun(m,n);     }   }; } var a = fun(0);  a.fun(1);  a.fun(2);  a.fun(3);//undefined,?,?,? var b = fun(0).fun(1)">
 
 
 
@@ -127,13 +129,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/"/>
+  <link rel="canonical" href="http://yoursite.com/2017/09/23/大部分人都会做错的经典JS闭包面试题/"/>
 
 
 
 
 
-  <title>Weblog</title>
+  <title>大部分人都会做错的经典JS闭包面试题 | Weblog</title>
   
 
 
@@ -152,8 +154,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -246,9 +247,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -278,9 +279,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/09/23/大部分人都会做错的经典JS闭包面试题/" itemprop="url">大部分人都会做错的经典JS闭包面试题</a></h1>
+          <h1 class="post-title" itemprop="name headline">大部分人都会做错的经典JS闭包面试题</h1>
         
 
         <div class="post-meta">
@@ -330,9 +329,7 @@
       
 
       
-        
-          
-            <p>先看题目代码：</p>
+        <p>先看题目代码：</p>
 <pre><code>function fun(n,o) {
   console.log(o)
   return {
@@ -484,8 +481,6 @@ fun(0)为执行第一层fun函数，.fun(1)执行的是fun(0)返回的第二层f
 <p>关于什么是闭包，网上的文章数不胜数，但理解什么是闭包还是要在代码中自己去发现与领悟。</p>
 <p>如果要我说什么是闭包，我认为，广义上的闭包就是指一个变量在他自身作用域外被使用了，就叫发生了闭包。</p>
 
-          
-        
       
     </div>
     
@@ -500,14 +495,20 @@ fun(0)为执行第一层fun函数，.fun(1)执行的是fun(0)返回的第二层f
 
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+            <a href="/tags/面试/" rel="tag"># 面试</a>
+          
+        </div>
+      
+
+      
+      
+      
 
       
 
       
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -517,10 +518,11 @@ fun(0)为执行第一层fun函数，.fun(1)执行的是fun(0)返回的第二层f
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -528,6 +530,10 @@ fun(0)为执行第一层fun函数，.fun(1)执行的是fun(0)返回的第二层f
 
 
           
+  <div class="comments" id="comments">
+    
+  </div>
+
 
         </div>
         
@@ -548,8 +554,17 @@ fun(0)为执行第一层fun函数，.fun(1)执行的是fun(0)返回的第二层f
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           
             <img class="site-author-image" itemprop="image"
@@ -619,6 +634,22 @@ fun(0)为执行第一层fun函数，.fun(1)执行的是fun(0)返回的第二层f
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#JS中有几种函数"><span class="nav-number">1.</span> <span class="nav-text">JS中有几种函数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#创建函数的几种方式"><span class="nav-number">2.</span> <span class="nav-text">创建函数的几种方式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#三个fun函数的关系是什么"><span class="nav-number">3.</span> <span class="nav-text">三个fun函数的关系是什么</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#函数作用域链的问题"><span class="nav-number">4.</span> <span class="nav-text">函数作用域链的问题</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#到底在调用哪个函数？"><span class="nav-number">5.</span> <span class="nav-text">到底在调用哪个函数？</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1、第一行a"><span class="nav-number">5.1.</span> <span class="nav-text">1、第一行a</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2、第二行b"><span class="nav-number">5.2.</span> <span class="nav-text">2、第二行b</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3、第三行c"><span class="nav-number">5.3.</span> <span class="nav-text">3、第三行c</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#后话"><span class="nav-number">6.</span> <span class="nav-text">后话</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
